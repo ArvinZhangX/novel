@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spider-Rule>
+	<!-- 小说站点-->
+	<Novel-Site>
+		<name>笔趣阁</name>
+		<!-- 用于和其他网站作区分 -->
+		<comment>biquge.tw</comment>
+		<url charset="UTF-8">http://www.biquge.tw</url>
+		<chapter-list-element selector="#list dd a" />
+		<!-- selector:jQuery选择器 index:通过选择器选中下标为几的元素，如果没有则默认为0 -->
+		<content-this-element selector="#content" index="0">
+			<!-- 需要过滤的文字。to 将 匹配内容过滤为什么内容  #{space}:两个空格 #{line-break}:换行符 不以#开头的文本:替换为普通内容-->
+			<parse to="#{space}"><![CDATA[&nbsp;&nbsp;]]></parse>
+			<parse to="#{line-break}"><![CDATA[<br/>]]></parse>
+			<parse to=""><![CDATA[最快更新，无弹窗阅读请。]]></parse>
+		</content-this-element>
+		<content-this-title-element selector="div.bookname h1" index="0"/>
+		<content-this-prev-element selector="#pager_prev" index="0"/>
+		<content-this-next-element selector="#pager_next" index="0"/>
+	</Novel-Site>
+	<Novel-Site>
+		<name>笔下文学</name>
+		<comment>bxwx8.org</comment>
+		<url charset="GBK">http://www.bxwx8.org</url>
+		<chapter-list-element selector="#TabCss dd a" />
+		<content-this-element selector="#content" index="0">
+			<parse to="#{space}"><![CDATA[&nbsp;&nbsp;]]></parse>
+			<parse to="#{line-break}"><![CDATA[<br />]]></parse>
+		</content-this-element>
+		<content-this-title-element selector="#title" index="0"/>
+		<content-this-prev-element selector="#footlink a" index="2" />
+		<content-this-next-element selector="#footlink a" index="4" />
+	</Novel-Site>
+	<Novel-Site>
+		<name>顶点小说</name>
+		<comment>23wx.com</comment>
+		<url charset="GBK">http://www.23wx.com</url>
+		<chapter-list-element selector="#at td a" />
+		<content-this-element selector="#contents" index="0">
+			<parse to="#{space}"><![CDATA[&nbsp;&nbsp;]]></parse>
+			<parse to="#{line-break}"><![CDATA[<br />]]></parse>
+		</content-this-element>
+		<content-this-title-element selector="#amain h1" index="0"/>
+		<content-this-prev-element selector="#footlink a" index="0" />
+		<content-this-next-element selector="#footlink a" index="2" />
+	</Novel-Site>
+</Spider-Rule>
