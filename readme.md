@@ -4,8 +4,19 @@
 
 然后就付诸实践了！
 
-![站点一截图](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+![站点一截图](https://github.com/ArvinZhangX/novel/blob/master/readmeImage/aa.png)
 
+https://github.com/ArvinZhangX/novel/blob/master/readmeImage/aa.png
+
+
+![站点2截图](https://github.com/ArvinZhangX/novel/blob/master/readmeImage/2.png)
+
+![站点3截图](https://github.com/ArvinZhangX/novel/blob/master/readmeImage/3.png)
+
+![站点4截图](https://github.com/ArvinZhangX/novel/blob/master/readmeImage/4.png)
+
+
+![Image text](https://github.com/ArvinZhangX/novel/blob/master/readmeImage/4.png)
 
 闲话少说，介绍一下如何运行这（几）个项目：
 第一个项目：novel.spider（姑且叫他为spider吧）-jsoup,http-client
