@@ -45,4 +45,7 @@ JAVA小说站点爬虫-spring-mybatis-jsoup-http-client
 
 JAVA小说站点爬虫-spring-mybatis-jsoup-http-client
 
-这个是三个项目组合起来的，最代码好像只能上传一个，我整合在一起了，有问题可以问我。谢谢
+这个是三个项目组合起来的，我整合在一起了，有问题可以问我。谢谢
+
+喜欢的话，欢迎打赏！谢谢。
+![支持作者](https://github.com/ArvinZhangX/file_tem/blob/master/chat_pay.png)
